@@ -9,20 +9,20 @@ import {
 } from 'recharts'
 
 const data = [
-  { subject: 'Local AI runtime', strength: 94 },
-  { subject: 'Retrieval systems', strength: 91 },
-  { subject: 'Data products', strength: 86 },
-  { subject: 'Automation', strength: 89 },
-  { subject: 'Graph memory', strength: 84 },
-  { subject: 'Frontend delivery', strength: 81 }
+  { subject: 'IA aplicada', strength: 94 },
+  { subject: 'Automação', strength: 91 },
+  { subject: 'Sites e funis', strength: 87 },
+  { subject: 'Tracking e dados', strength: 89 },
+  { subject: 'Operação interna', strength: 84 },
+  { subject: 'Entrega rápida', strength: 86 }
 ]
 
 export default function CapabilityRadar() {
   return (
     <article className="chart-card">
       <div className="chart-copy">
-        <p className="chart-kicker">Capability profile</p>
-        <h3>Where I add the most technical leverage</h3>
+        <p className="chart-kicker">Perfil de capacidade</p>
+        <h3>Onde eu entrego mais alavancagem prática</h3>
       </div>
       <div className="chart-stage">
         <ResponsiveContainer width="100%" height="100%">

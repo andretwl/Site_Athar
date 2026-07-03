@@ -2,19 +2,19 @@ import React from 'react'
 import { Bar, BarChart, CartesianGrid, Cell, ResponsiveContainer, XAxis, YAxis } from 'recharts'
 
 const data = [
-  { name: 'Inference control', value: 90, color: '#ff7a59' },
-  { name: 'Retrieval design', value: 88, color: '#ffd166' },
-  { name: 'Workflow tooling', value: 84, color: '#7ae582' },
-  { name: 'Product explainability', value: 82, color: '#7ad7ff' },
-  { name: 'Team enablement', value: 79, color: '#c4b5fd' }
+  { name: 'Campanhas e ads', value: 91, color: '#ff7a59' },
+  { name: 'Sites e tracking', value: 89, color: '#ffd166' },
+  { name: 'Conteúdo com IA', value: 87, color: '#7ae582' },
+  { name: 'Automação operacional', value: 84, color: '#7ad7ff' },
+  { name: 'Gestão de equipes', value: 81, color: '#c4b5fd' }
 ]
 
 export default function DeliveryBars() {
   return (
     <article className="chart-card">
       <div className="chart-copy">
-        <p className="chart-kicker">Business translation</p>
-        <h3>How the technical stack maps to strategic product value</h3>
+        <p className="chart-kicker">Tradução de negócio</p>
+        <h3>Como a parte técnica vira valor operacional e comercial</h3>
       </div>
       <div className="chart-stage">
         <ResponsiveContainer width="100%" height="100%">

@@ -3,23 +3,23 @@ import React from 'react'
 const phases = [
   {
     step: '01',
-    title: 'Map the operating reality',
-    text: 'Inspect the current runtime, repositories, services, and data paths before making claims or architecture promises.'
+    title: 'Entender o objetivo e a operação',
+    text: 'Mapeio campanha, produto, time, ferramentas atuais, gargalos e métricas antes de propor qualquer estrutura.'
   },
   {
     step: '02',
-    title: 'Stabilize the AI layer',
-    text: 'Make inference, retrieval, and memory explicit enough that the team can diagnose failures and measure confidence.'
+    title: 'Montar a base de execução',
+    text: 'Estruturo páginas, tracking, campanhas, automações, conteúdo e integrações para a operação começar a rodar com clareza.'
   },
   {
     step: '03',
-    title: 'Wrap it in product form',
-    text: 'Expose the useful part through interfaces, dashboards, or internal operator tools that reduce friction for non-engineers.'
+    title: 'Colocar IA e conteúdo para produzir',
+    text: 'Acelero criação de texto, vídeo, criativos, mensagens e rotinas internas usando IA de forma prática e controlável.'
   },
   {
     step: '04',
-    title: 'Prepare for scale or handoff',
-    text: 'Document contracts, deployment expectations, and the cloud path when the system outgrows a local-first stage.'
+    title: 'Organizar escala e equipe',
+    text: 'Transformo a execução em processo repetível com gestão de tarefas, prioridades, acompanhamento e visibilidade para liderança.'
   }
 ]
 

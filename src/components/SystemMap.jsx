@@ -2,20 +2,20 @@ import React from 'react'
 
 const columns = [
   {
-    title: 'Inputs',
-    items: ['Documents', 'Behavior logs', 'Field notes', 'Knowledge files']
+    title: 'Aquisição',
+    items: ['Anúncios pagos', 'Landing pages', 'Rastreamento de visitantes', 'Captação de leads']
   },
   {
-    title: 'AI Core',
-    items: ['LocalAI inference', 'Qdrant retrieval', 'Cognee memory', 'Validation scripts']
+    title: 'Inteligência',
+    items: ['IA para texto e vídeo', 'Automação de conteúdo', 'Análise de dados', 'Memória e contexto']
   },
   {
-    title: 'Product Surfaces',
-    items: ['Dashboards', 'Operator tools', 'Workflow assistants', 'Scenario interfaces']
+    title: 'Operação',
+    items: ['CRM e e-mail', 'Fluxos de atendimento', 'Dashboards', 'Ferramentas internas']
   },
   {
-    title: 'Campaign Outcomes',
-    items: ['Faster decisions', 'Clearer team context', 'Better task routing', 'Higher data trust']
+    title: 'Gestão',
+    items: ['ClickUp e Monday', 'Coordenação de equipes', 'Tarefas e prioridades', 'Leitura clara de resultado']
   }
 ]
 

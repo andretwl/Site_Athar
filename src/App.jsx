@@ -1,8 +1,15 @@
 import React, { Suspense, lazy } from 'react'
+import portrait from '../images/photoathar-hero.jpg'
 import ProjectGrid from './components/ProjectGrid'
 import SystemMap from './components/SystemMap'
 import Timeline from './components/Timeline'
-import { audiencePillars, projectCards, proofMetrics, resumeHighlights } from './data/siteContent'
+import {
+  audiencePillars,
+  presentationServices,
+  projectCards,
+  proofMetrics,
+  resumeHighlights
+} from './data/siteContent'
 
 const CapabilityRadar = lazy(() => import('./components/CapabilityRadar'))
 const DeliveryBars = lazy(() => import('./components/DeliveryBars'))
@@ -37,6 +44,16 @@ function ResumeItem({ item }) {
   )
 }
 
+function ServiceCard({ item }) {
+  return (
+    <article className="pillar-card">
+      <div className="pillar-eyebrow">{item.eyebrow}</div>
+      <h3>{item.title}</h3>
+      <p>{item.description}</p>
+    </article>
+  )
+}
+
 export default function App() {
   return (
     <div className="site-shell">
@@ -46,54 +63,58 @@ export default function App() {
           <div className="brand-mark">A</div>
           <div>
             <p className="brand-name">Athar</p>
-            <p className="brand-role">AI Engineer</p>
+            <p className="brand-role">Engenheiro de IA</p>
           </div>
         </div>
         <nav className="topnav">
-          <a href="#abilities">Abilities</a>
-          <a href="#systems">Systems</a>
-          <a href="#resume">Resume</a>
+          <a href="#apresentacao">Apresentação</a>
+          <a href="#abilities">Capacidades</a>
+          <a href="#systems">Sistemas</a>
+          <a href="#resume">Resumo</a>
         </nav>
       </header>
 
       <main>
         <section className="hero-panel">
           <div className="hero-copy">
-            <div className="hero-kicker">AI systems for high-stakes digital operations</div>
+            <div className="hero-kicker">IA, marketing, operação e velocidade de execução</div>
             <h1>
-              I build retrieval, memory, local inference, and product delivery systems that turn
-              complex data into operational decisions.
+              Já atuei em campanhas políticas e hoje ajudo equipes a lançar, medir e escalar
+              operações digitais com IA e automação.
             </h1>
             <p className="hero-summary">
-              My current workspace spans Unity agent systems, LocalAI infrastructure, Qdrant-based
-              retrieval, and Cognee knowledge graph memory. That mix is directly useful for
-              campaign technology, team coordination platforms, and data products where reliability
-              matters more than demos.
+              Consigo entrar desde a estratégia até a execução: campanhas de anúncios, sites e
+              landing pages rápidas, rastreamento de visitantes, fluxos de e-mail, produção e
+              edição de conteúdo com IA, além de ferramentas para coordenar equipes, tarefas e
+              operação diária em plataformas como ClickUp, Monday e similares.
             </p>
             <div className="hero-actions">
-              <a className="button-primary" href="#systems">
-                View selected systems
+              <a className="button-primary" href="#apresentacao">
+                Como posso ajudar
               </a>
               <a className="button-secondary" href="#resume">
-                Resume highlights
+                Resumo profissional
               </a>
             </div>
           </div>
 
           <aside className="hero-aside">
-            <div className="signal-card">
-              <p className="signal-label">Core operating model</p>
-              <ul>
-                <li>Local inference with OpenAI-compatible APIs</li>
-                <li>Vector retrieval and graph memory</li>
-                <li>Automation layers that expose runtime truth</li>
-              </ul>
+            <div className="portrait-card">
+              <div className="portrait-frame">
+                <img className="portrait-image" src={portrait} alt="Retrato profissional de Athar" />
+              </div>
+              <div className="portrait-caption">
+                <strong>Athar</strong>
+                <span>IA, campanhas digitais, automação e operação estratégica</span>
+              </div>
             </div>
-            <div className="orbital-grid">
-              <div>Inference</div>
-              <div>Retrieval</div>
-              <div>Memory</div>
-              <div>Product</div>
+            <div className="signal-card">
+              <p className="signal-label">Frentes que eu entrego</p>
+              <ul>
+                <li>Campanhas pagas, páginas e tracking</li>
+                <li>Conteúdo com IA: texto, vídeo e criativos</li>
+                <li>Operação de equipe, tarefas e automação</li>
+              </ul>
             </div>
           </aside>
         </section>
@@ -104,22 +125,27 @@ export default function App() {
           ))}
         </section>
 
+        <section className="section-block audience-grid" id="apresentacao">
+          {presentationServices.map((item) => (
+            <ServiceCard key={item.title} item={item} />
+          ))}
+        </section>
+
         <section className="section-block" id="abilities">
           <div className="section-heading">
-            <p className="section-kicker">How I explain the stack</p>
-            <h2>Technical depth, shown in decision-friendly shapes</h2>
+            <p className="section-kicker">Capacidades</p>
+            <h2>Profundidade técnica explicada de forma simples para decisão</h2>
             <p>
-              The graphs below are tuned for buyers and hiring teams. They show where I can lead
-              architecture, where I reduce operational risk, and how the technical lanes connect
-              to strategic digital products.
+              Os gráficos abaixo mostram onde eu consigo liderar arquitetura, acelerar entrega e
+              reduzir risco operacional em produtos digitais, marketing e automação com IA.
             </p>
           </div>
 
           <div className="charts-grid">
-            <Suspense fallback={<div className="chart-card chart-loading">Loading capability profile...</div>}>
+            <Suspense fallback={<div className="chart-card chart-loading">Carregando perfil de capacidades...</div>}>
               <CapabilityRadar />
             </Suspense>
-            <Suspense fallback={<div className="chart-card chart-loading">Loading business translation graph...</div>}>
+            <Suspense fallback={<div className="chart-card chart-loading">Carregando mapa de valor...</div>}>
               <DeliveryBars />
             </Suspense>
           </div>
@@ -133,12 +159,11 @@ export default function App() {
 
         <section className="section-block" id="systems">
           <div className="section-heading">
-            <p className="section-kicker">System thinking</p>
-            <h2>From raw signals to campaign-grade operating tools</h2>
+            <p className="section-kicker">Visão de sistema</p>
+            <h2>Da aquisição de atenção até a operação completa da campanha ou negócio</h2>
             <p>
-              This is the lane I fit best: ingest messy inputs, structure retrieval and memory,
-              wrap it with usable interfaces, and keep the runtime observable enough that teams
-              can trust it under pressure.
+              Meu melhor encaixe é quando a empresa precisa unir marketing, dados, automação,
+              conteúdo e gestão interna em um fluxo coerente, rápido de executar e fácil de medir.
             </p>
           </div>
           <SystemMap />
@@ -146,11 +171,11 @@ export default function App() {
 
         <section className="section-block">
           <div className="section-heading">
-            <p className="section-kicker">Selected systems</p>
-            <h2>Projects in the current workspace that prove the range</h2>
+            <p className="section-kicker">Base técnica</p>
+            <h2>Projetos e sistemas que sustentam minha capacidade de entrega</h2>
             <p>
-              These cards are based on the real repositories present in
-              `/mnt/data/Projects_SSD`, not a generic portfolio template.
+              Estes cards vêm dos repositórios reais do meu workspace e mostram a profundidade da
+              base técnica por trás da entrega comercial e operacional.
             </p>
           </div>
           <ProjectGrid projects={projectCards} />
@@ -158,19 +183,19 @@ export default function App() {
 
         <section className="section-block">
           <div className="section-heading">
-            <p className="section-kicker">Execution style</p>
-            <h2>How I move from architecture to delivery</h2>
+            <p className="section-kicker">Execução</p>
+            <h2>Como eu transformo necessidade em operação funcional</h2>
           </div>
           <Timeline />
         </section>
 
         <section className="section-block resume-panel" id="resume">
           <div className="section-heading">
-            <p className="section-kicker">Resume highlights</p>
-            <h2>Where I create leverage</h2>
+            <p className="section-kicker">Resumo profissional</p>
+            <h2>Onde eu gero mais alavancagem</h2>
             <p>
-              Best fit: companies building strategic digital products for campaign operations,
-              field teams, analytics, internal tooling, and decision support.
+              Melhor encaixe: campanhas políticas, operações digitais, equipes de marketing,
+              produtos estratégicos e negócios que precisam combinar velocidade com inteligência.
             </p>
           </div>
 
@@ -183,8 +208,8 @@ export default function App() {
       </main>
 
       <footer className="footer">
-        <p>Athar, AI Engineer focused on local AI systems, retrieval, memory, and operational products.</p>
-        <p>Built for GitHub + Cloudflare Pages deployment.</p>
+        <p>Athar, engenheiro de IA com foco em campanhas, automação, conteúdo, operações e produtos digitais.</p>
+        <p>Site publicado com GitHub e Cloudflare Pages.</p>
       </footer>
     </div>
   )
