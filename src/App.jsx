@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from 'react'
+import React, { Suspense, lazy, useEffect, useState } from 'react'
 import portrait from '../images/photoathar-hero.jpg'
 import ProjectGrid from './components/ProjectGrid'
 import SystemMap from './components/SystemMap'
@@ -62,26 +62,83 @@ function ServiceCard({ item }) {
 }
 
 export default function App() {
+  const [route, setRoute] = useState(() => window.location.hash)
+  const isCemeteryPage = route === '#/cemiterios'
+
+  useEffect(() => {
+    const onHashChange = () => {
+      setRoute(window.location.hash)
+      if (window.location.hash === '#/cemiterios') {
+        window.scrollTo(0, 0)
+      }
+    }
+    window.addEventListener('hashchange', onHashChange)
+    return () => window.removeEventListener('hashchange', onHashChange)
+  }, [])
+
+  useEffect(() => {
+    document.title = isCemeteryPage
+      ? 'Caso de uso — Cemitérios | Athar'
+      : 'Athar — AI Engineer'
+  }, [isCemeteryPage])
+
+  useEffect(() => {
+    if (!isCemeteryPage && route && route !== '#') {
+      requestAnimationFrame(() => {
+        document.querySelector(route)?.scrollIntoView()
+      })
+    }
+  }, [isCemeteryPage, route])
+
+  const topbar = (
+    <header className="topbar">
+      <div className="brand-block">
+        <div className="brand-mark">A</div>
+        <div>
+          <p className="brand-name">Athar</p>
+          <p className="brand-role">Engenheiro de IA</p>
+        </div>
+      </div>
+      <nav className="topnav">
+        <a href="#apresentacao">Apresentação</a>
+        <a href="#abilities">Capacidades</a>
+        <a href="#systems">Sistemas</a>
+        <a href="#parlamentar">Inteligência</a>
+        <a href="#cemiterios">Caso de uso</a>
+        <a href="#resume">Resumo</a>
+      </nav>
+    </header>
+  )
+
+  const footer = (
+    <footer className="footer">
+      <p>Athar, engenheiro de IA com foco em campanhas, automação, conteúdo, operações e produtos digitais.</p>
+      <p>Site publicado com GitHub e Cloudflare Pages.</p>
+    </footer>
+  )
+
+  if (isCemeteryPage) {
+    return (
+      <div className="site-shell">
+        <div className="site-noise" />
+        {topbar}
+        <main className="cemetery-page">
+          <a className="cemetery-page-back" href="#apresentacao">
+            ← Voltar ao início
+          </a>
+          <Suspense fallback={<div className="chart-card chart-loading">Carregando exemplo de uso...</div>}>
+            <CemeteryUseCase standalone />
+          </Suspense>
+        </main>
+        {footer}
+      </div>
+    )
+  }
+
   return (
     <div className="site-shell">
       <div className="site-noise" />
-      <header className="topbar">
-        <div className="brand-block">
-          <div className="brand-mark">A</div>
-          <div>
-            <p className="brand-name">Athar</p>
-            <p className="brand-role">Engenheiro de IA</p>
-          </div>
-        </div>
-        <nav className="topnav">
-          <a href="#apresentacao">Apresentação</a>
-          <a href="#abilities">Capacidades</a>
-          <a href="#systems">Sistemas</a>
-          <a href="#parlamentar">Inteligência</a>
-          <a href="#cemiterios">Caso de uso</a>
-          <a href="#resume">Resumo</a>
-        </nav>
-      </header>
+      {topbar}
 
       <main>
         <section className="hero-panel">
@@ -236,10 +293,7 @@ export default function App() {
         </section>
       </main>
 
-      <footer className="footer">
-        <p>Athar, engenheiro de IA com foco em campanhas, automação, conteúdo, operações e produtos digitais.</p>
-        <p>Site publicado com GitHub e Cloudflare Pages.</p>
-      </footer>
+      {footer}
     </div>
   )
 }

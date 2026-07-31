@@ -78,7 +78,7 @@ function ChartCard({ title, data }) {
   )
 }
 
-export default function CemeteryUseCase() {
+export default function CemeteryUseCase({ standalone = false }) {
   const situacoes = cemeterySummary.situacoes
   const ciente = situacoes.find((s) => s.situacao === 'CIENTE')
   const impedido = situacoes.find((s) => s.situacao === 'IMPEDIDO')
@@ -209,9 +209,16 @@ export default function CemeteryUseCase() {
             educação e qualquer outra frente de emendas parlamentares.
           </p>
         </div>
-        <a className="button-primary" href="#resume">
-          Vamos conversar
-        </a>
+        <div className="cta-actions">
+          {!standalone && (
+            <a className="button-secondary" href="#/cemiterios">
+              Abrir página do caso de uso
+            </a>
+          )}
+          <a className="button-primary" href="#resume">
+            Vamos conversar
+          </a>
+        </div>
       </div>
     </section>
   )
