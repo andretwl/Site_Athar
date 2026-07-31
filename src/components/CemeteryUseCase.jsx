@@ -10,7 +10,12 @@ import {
   Cell,
 } from 'recharts'
 import CemeteryMap from './CemeteryMap'
-import { cemeterySummary, cemeteryMunicipios, cemeteryUfs } from '../data/cemeteryData'
+import {
+  cemeterySummary,
+  cemeteryMunicipios,
+  cemeteryUfs,
+  cemeteryEmendas,
+} from '../data/cemeteryData'
 
 const brl0 = (v) =>
   new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL', maximumFractionDigits: 0 }).format(v)
@@ -24,7 +29,14 @@ const top10 = [...cemeteryMunicipios]
 
 const ufData = cemeteryUfs.map((u) => ({ name: u.uf, total: u.total }))
 
-const sortedMunicipios = [...cemeteryMunicipios].sort((a, b) => b.total - a.total)
+const sortedEmendas = [...cemeteryEmendas].sort((a, b) => b.total - a.total)
+
+function contatoDe(emenda) {
+  const partes = []
+  if (emenda.email) partes.push(emenda.email)
+  if (emenda.telefone) partes.push(emenda.telefone)
+  return partes.join(' · ') || '—'
+}
 
 function ChartTooltip({ active, payload, label }) {
   if (!active || !payload?.length) return null
@@ -117,7 +129,9 @@ export default function CemeteryUseCase() {
           {cemeterySummary.nEmendas} emendas no total, sendo {brl0(ciente.total)} em{' '}
           {ciente.n} planos cientes (prefeituras cientes e aptas a contratar) e {brl0(impedido.total)}{' '}
           em {impedido.n} planos impedidos (restrição técnica a regularizar). Cada bolha no mapa
-          representa o potencial individual de orçamento de uma prefeitura.
+          representa o potencial individual de orçamento de uma prefeitura — e a lista completa
+          abaixo traz as {cemeteryEmendas.length} emendas com o prefeito(a) responsável, o partido
+          e o contato da prefeitura para a primeira abordagem comercial.
         </p>
         <div className="tag-row">
           <span className="tag">Objeto 301</span>
@@ -147,33 +161,37 @@ export default function CemeteryUseCase() {
       </div>
 
       <div className="cemetery-table-wrap">
-        <h3 className="cemetery-table-title">Todas as prefeituras com emenda objeto 301</h3>
+        <h3 className="cemetery-table-title">
+          As {cemeteryEmendas.length} emendas — prefeitura, prefeito(a) e contato
+        </h3>
         <table className="cemetery-table">
           <thead>
             <tr>
               <th>#</th>
               <th>Município</th>
-              <th>UF</th>
-              <th>Emendas</th>
+              <th>Prefeito(a)</th>
+              <th>Partido</th>
+              <th>Contato da prefeitura</th>
               <th>Situação</th>
               <th className="cemetery-th-value">Valor</th>
             </tr>
           </thead>
           <tbody>
-            {sortedMunicipios.map((m, i) => {
-              const impedido = m.nImpedidos > 0
+            {sortedEmendas.map((e, i) => {
+              const impedido = e.situacao === 'IMPEDIDO'
               return (
-                <tr key={m.ibge}>
+                <tr key={e.plano}>
                   <td>{i + 1}</td>
-                  <td className="cemetery-td-name">{m.nome}</td>
-                  <td>{m.uf}</td>
-                  <td>{m.nEmendas}</td>
+                  <td className="cemetery-td-name">{e.municipio}</td>
+                  <td>{e.prefeito || '—'}</td>
+                  <td>{e.partido || '—'}</td>
+                  <td className="cemetery-td-contact">{contatoDe(e)}</td>
                   <td>
                     <span className={impedido ? 'situ-badge situ-badge-block' : 'situ-badge situ-badge-ok'}>
                       {impedido ? 'Impedido' : 'Ciente'}
                     </span>
                   </td>
-                  <td className="cemetery-td-value">{brl(m.total)}</td>
+                  <td className="cemetery-td-value">{brl(e.total)}</td>
                 </tr>
               )
             })}

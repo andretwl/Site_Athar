@@ -979,7 +979,7 @@ a {
 
 .cemetery-table-wrap {
   margin-top: 22px;
-  overflow: hidden;
+  overflow-x: auto;
   border-radius: var(--radius-lg);
   border: 1px solid var(--line);
   background: var(--panel);
@@ -997,6 +997,7 @@ a {
 
 .cemetery-table {
   width: 100%;
+  min-width: 860px;
   border-collapse: collapse;
   font-size: 0.92rem;
 }
@@ -1032,6 +1033,16 @@ a {
 
 .cemetery-td-name {
   font-weight: 600;
+}
+
+.cemetery-td-contact {
+  font-size: 0.84rem;
+  color: var(--muted);
+  overflow-wrap: anywhere;
+}
+
+.cemetery-td-contact:not(:empty) {
+  color: var(--accent-soft);
 }
 
 .cemetery-td-value {
@@ -1125,9 +1136,23 @@ a {
   color: var(--accent-soft);
 }
 
-.cemetery-popup span:last-child {
+.cemetery-popup-meta {
   color: var(--muted);
   font-size: 0.82rem;
+}
+
+.cemetery-popup-prefeito {
+  margin-top: 4px;
+  padding-top: 6px;
+  border-top: 1px solid rgba(153, 184, 210, 0.16);
+  font-size: 0.9rem;
+  color: #f3f5f7;
+}
+
+.cemetery-popup-contact {
+  color: var(--accent-soft);
+  font-size: 0.8rem;
+  overflow-wrap: anywhere;
 }
 
 .leaflet-container {

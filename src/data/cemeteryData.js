@@ -20,7 +20,8 @@ export const cemeterySummary = {
       "n": 4,
       "total": 1691500.0
     }
-  ]
+  ],
+  "nComContato": 21
 };
 
 export const cemeteryMunicipios = [
@@ -32,7 +33,11 @@ export const cemeteryMunicipios = [
     "lng": -40.2764,
     "total": 1990000.0,
     "nEmendas": 1,
-    "nImpedidos": 0
+    "nImpedidos": 0,
+    "prefeito": "LUIZ CARLOS COUTINHO",
+    "partido": "PP",
+    "email": "contabilidade@pma.es.gov.br",
+    "telefone": "(27) 32964520"
   },
   {
     "nome": "Caiçara do Norte",
@@ -42,7 +47,11 @@ export const cemeteryMunicipios = [
     "lng": -36.0717,
     "total": 1293500.0,
     "nEmendas": 2,
-    "nImpedidos": 0
+    "nImpedidos": 0,
+    "prefeito": "ALCÉLIO FERNANDES BARBOSA",
+    "partido": "PSDB",
+    "email": null,
+    "telefone": null
   },
   {
     "nome": "Inhumas",
@@ -52,7 +61,11 @@ export const cemeteryMunicipios = [
     "lng": -49.5001,
     "total": 995000.0,
     "nEmendas": 1,
-    "nImpedidos": 0
+    "nImpedidos": 0,
+    "prefeito": "JOSÉ ESSADO NETO",
+    "partido": "UNIÃO",
+    "email": "contabilidade@inhumas.go.gov.br",
+    "telefone": "(62) 35112121"
   },
   {
     "nome": "Santa Tereza",
@@ -62,7 +75,11 @@ export const cemeteryMunicipios = [
     "lng": -51.7351,
     "total": 895500.0,
     "nEmendas": 2,
-    "nImpedidos": 0
+    "nImpedidos": 0,
+    "prefeito": "GISELE CAUMO",
+    "partido": "PP",
+    "email": "contabil@santatereza.rs.gov.br",
+    "telefone": "(54) 34561033"
   },
   {
     "nome": "Abreulândia",
@@ -72,7 +89,11 @@ export const cemeteryMunicipios = [
     "lng": -49.1518,
     "total": 796000.0,
     "nEmendas": 2,
-    "nImpedidos": 0
+    "nImpedidos": 0,
+    "prefeito": "MANOEL FRANCISCO DE MOURA",
+    "partido": "PT",
+    "email": null,
+    "telefone": "(63) 33891225"
   },
   {
     "nome": "Caseara",
@@ -82,7 +103,11 @@ export const cemeteryMunicipios = [
     "lng": -49.9521,
     "total": 796000.0,
     "nEmendas": 1,
-    "nImpedidos": 0
+    "nImpedidos": 0,
+    "prefeito": "MARCOS CARVALHO LIMA",
+    "partido": "SOLIDARIEDADE",
+    "email": null,
+    "telefone": null
   },
   {
     "nome": "Santana do São Francisco",
@@ -92,7 +117,11 @@ export const cemeteryMunicipios = [
     "lng": -36.6105,
     "total": 597000.0,
     "nEmendas": 1,
-    "nImpedidos": 0
+    "nImpedidos": 0,
+    "prefeito": "RICARDO JOSÉ RORIZ SILVA CRUZ",
+    "partido": "PSD",
+    "email": null,
+    "telefone": "(79) 32160524"
   },
   {
     "nome": "Santana",
@@ -102,7 +131,11 @@ export const cemeteryMunicipios = [
     "lng": -51.1729,
     "total": 597000.0,
     "nEmendas": 1,
-    "nImpedidos": 0
+    "nImpedidos": 0,
+    "prefeito": "SEBASTIÃO FERREIRA DA ROCHA",
+    "partido": "PP",
+    "email": null,
+    "telefone": "(96) 32815292"
   },
   {
     "nome": "Parecis",
@@ -112,7 +145,11 @@ export const cemeteryMunicipios = [
     "lng": -61.6032,
     "total": 547250.0,
     "nEmendas": 1,
-    "nImpedidos": 0
+    "nImpedidos": 0,
+    "prefeito": "MARCONDES DE CARVALHO",
+    "partido": "UNIÃO",
+    "email": "pmparecisro@hotmail.com",
+    "telefone": "(69) 34471051"
   },
   {
     "nome": "São Domingos do Prata",
@@ -122,7 +159,11 @@ export const cemeteryMunicipios = [
     "lng": -42.971,
     "total": 523371.99,
     "nEmendas": 1,
-    "nImpedidos": 0
+    "nImpedidos": 0,
+    "prefeito": "FERNANDO ROLLA",
+    "partido": "AVANTE",
+    "email": null,
+    "telefone": null
   },
   {
     "nome": "Presidente Dutra",
@@ -132,7 +173,11 @@ export const cemeteryMunicipios = [
     "lng": -41.9843,
     "total": 497500.0,
     "nEmendas": 1,
-    "nImpedidos": 0
+    "nImpedidos": 0,
+    "prefeito": "ROBERTO CARLOS ALVES DE SOUZA",
+    "partido": "MDB",
+    "email": "contabilidadepd@gmail.com",
+    "telefone": "(74) 36401010"
   },
   {
     "nome": "Olho d'Água",
@@ -142,7 +187,11 @@ export const cemeteryMunicipios = [
     "lng": -37.7406,
     "total": 497500.0,
     "nEmendas": 1,
-    "nImpedidos": 0
+    "nImpedidos": 0,
+    "prefeito": "JOANA SABINO DE ALMEIDA CARVALHO",
+    "partido": "PSB",
+    "email": null,
+    "telefone": null
   },
   {
     "nome": "Pomerode",
@@ -152,7 +201,11 @@ export const cemeteryMunicipios = [
     "lng": -49.1785,
     "total": 497500.0,
     "nEmendas": 1,
-    "nImpedidos": 1
+    "nImpedidos": 1,
+    "prefeito": "RAFAEL RAMTHUN",
+    "partido": "PL",
+    "email": null,
+    "telefone": null
   },
   {
     "nome": "Campanário",
@@ -162,7 +215,11 @@ export const cemeteryMunicipios = [
     "lng": -41.7355,
     "total": 497500.0,
     "nEmendas": 1,
-    "nImpedidos": 0
+    "nImpedidos": 0,
+    "prefeito": "FAUSTO DUARTE",
+    "partido": "REPUBLICANOS",
+    "email": null,
+    "telefone": null
   },
   {
     "nome": "Jussari",
@@ -172,7 +229,11 @@ export const cemeteryMunicipios = [
     "lng": -39.491,
     "total": 497500.0,
     "nEmendas": 1,
-    "nImpedidos": 0
+    "nImpedidos": 0,
+    "prefeito": "ORLEANS MASCARENHAS DOS SANTOS",
+    "partido": "PSD",
+    "email": "jorgeluiz.agp@hotmail.com",
+    "telefone": "(77) 36241485"
   },
   {
     "nome": "Gaspar",
@@ -182,7 +243,11 @@ export const cemeteryMunicipios = [
     "lng": -48.9534,
     "total": 497500.0,
     "nEmendas": 1,
-    "nImpedidos": 0
+    "nImpedidos": 0,
+    "prefeito": "PAULO NORBERTO KOERICH",
+    "partido": "PL",
+    "email": "camilla@gaspar.sc.gov.br",
+    "telefone": "(47) 33316347"
   },
   {
     "nome": "Lidianópolis",
@@ -192,7 +257,11 @@ export const cemeteryMunicipios = [
     "lng": -51.6506,
     "total": 497500.0,
     "nEmendas": 1,
-    "nImpedidos": 0
+    "nImpedidos": 0,
+    "prefeito": "APARECIDO BUZATO",
+    "partido": "REPUBLICANOS",
+    "email": null,
+    "telefone": null
   },
   {
     "nome": "Petrolândia",
@@ -202,7 +271,11 @@ export const cemeteryMunicipios = [
     "lng": -49.6937,
     "total": 497500.0,
     "nEmendas": 1,
-    "nImpedidos": 0
+    "nImpedidos": 0,
+    "prefeito": "RODRIGO DE SOUZA",
+    "partido": "MDB",
+    "email": null,
+    "telefone": null
   },
   {
     "nome": "Claro dos Poções",
@@ -212,7 +285,11 @@ export const cemeteryMunicipios = [
     "lng": -44.2061,
     "total": 492525.0,
     "nEmendas": 1,
-    "nImpedidos": 0
+    "nImpedidos": 0,
+    "prefeito": "JOSÉ VANDERLEI CARDOSO",
+    "partido": "UNIÃO",
+    "email": "prefeito@clarodospocoes.mg.gov.br",
+    "telefone": "(38) 32371157"
   },
   {
     "nome": "Divinópolis do Tocantins",
@@ -222,7 +299,11 @@ export const cemeteryMunicipios = [
     "lng": -49.2169,
     "total": 398000.0,
     "nEmendas": 1,
-    "nImpedidos": 0
+    "nImpedidos": 0,
+    "prefeito": "FLAVIO RODRIGUES SILVA",
+    "partido": "UNIÃO",
+    "email": "ascomjct@uol.com.br",
+    "telefone": "(63) 35311177"
   },
   {
     "nome": "Brejetuba",
@@ -232,7 +313,11 @@ export const cemeteryMunicipios = [
     "lng": -41.2954,
     "total": 398000.0,
     "nEmendas": 1,
-    "nImpedidos": 0
+    "nImpedidos": 0,
+    "prefeito": "LEVI MARQUES DE SOUZA",
+    "partido": "PDT",
+    "email": null,
+    "telefone": "(027) 5604401"
   },
   {
     "nome": "São Mateus",
@@ -242,7 +327,11 @@ export const cemeteryMunicipios = [
     "lng": -39.8579,
     "total": 398000.0,
     "nEmendas": 1,
-    "nImpedidos": 0
+    "nImpedidos": 0,
+    "prefeito": "MARCUS AZEVEDO BATISTA",
+    "partido": "PODE",
+    "email": "administracao@saomateus.es.gov.br",
+    "telefone": "(27) 98135476"
   },
   {
     "nome": "Paula Cândido",
@@ -252,7 +341,11 @@ export const cemeteryMunicipios = [
     "lng": -42.9752,
     "total": 398000.0,
     "nEmendas": 1,
-    "nImpedidos": 0
+    "nImpedidos": 0,
+    "prefeito": "EVERALDO ROBERTO DA CONCEIÇÃO",
+    "partido": "UNIÃO",
+    "email": null,
+    "telefone": null
   },
   {
     "nome": "Cajazeiras do Piauí",
@@ -262,7 +355,11 @@ export const cemeteryMunicipios = [
     "lng": -42.3903,
     "total": 398000.0,
     "nEmendas": 1,
-    "nImpedidos": 0
+    "nImpedidos": 0,
+    "prefeito": "CARLOS ALBERTO SILVESTRE DE SOUSA",
+    "partido": "PP",
+    "email": null,
+    "telefone": null
   },
   {
     "nome": "São Gonçalo do Piauí",
@@ -272,7 +369,11 @@ export const cemeteryMunicipios = [
     "lng": -42.7095,
     "total": 398000.0,
     "nEmendas": 1,
-    "nImpedidos": 0
+    "nImpedidos": 0,
+    "prefeito": "GERLANE FERREIRA DA SILVA CABRAL",
+    "partido": "MDB",
+    "email": null,
+    "telefone": null
   },
   {
     "nome": "Ângulo",
@@ -282,7 +383,11 @@ export const cemeteryMunicipios = [
     "lng": -51.9154,
     "total": 398000.0,
     "nEmendas": 1,
-    "nImpedidos": 0
+    "nImpedidos": 0,
+    "prefeito": "ALEXANDRE DE SOUSA PROFETA",
+    "partido": "PSD",
+    "email": null,
+    "telefone": null
   },
   {
     "nome": "Cantagalo",
@@ -292,7 +397,11 @@ export const cemeteryMunicipios = [
     "lng": -52.1198,
     "total": 398000.0,
     "nEmendas": 1,
-    "nImpedidos": 0
+    "nImpedidos": 0,
+    "prefeito": "JOAO KONJUNSKI",
+    "partido": "PSD",
+    "email": null,
+    "telefone": null
   },
   {
     "nome": "Cordeiro",
@@ -302,7 +411,11 @@ export const cemeteryMunicipios = [
     "lng": -42.3648,
     "total": 398000.0,
     "nEmendas": 1,
-    "nImpedidos": 1
+    "nImpedidos": 1,
+    "prefeito": "LEONAN LOPES MELHORANCE",
+    "partido": "PL",
+    "email": null,
+    "telefone": null
   },
   {
     "nome": "Caxias do Sul",
@@ -312,7 +425,11 @@ export const cemeteryMunicipios = [
     "lng": -51.1792,
     "total": 398000.0,
     "nEmendas": 1,
-    "nImpedidos": 0
+    "nImpedidos": 0,
+    "prefeito": "ADILO ANGELO DIDOMENICO",
+    "partido": "PSDB",
+    "email": null,
+    "telefone": "(54) 32186000"
   },
   {
     "nome": "Roque Gonzales",
@@ -322,7 +439,11 @@ export const cemeteryMunicipios = [
     "lng": -55.0266,
     "total": 398000.0,
     "nEmendas": 1,
-    "nImpedidos": 0
+    "nImpedidos": 0,
+    "prefeito": "FERNANDO MATTES MACHRY",
+    "partido": "PP",
+    "email": null,
+    "telefone": null
   },
   {
     "nome": "Arujá",
@@ -332,7 +453,11 @@ export const cemeteryMunicipios = [
     "lng": -46.32,
     "total": 398000.0,
     "nEmendas": 1,
-    "nImpedidos": 1
+    "nImpedidos": 1,
+    "prefeito": "LUIS ANTONIO DE CAMARGO",
+    "partido": "PSD",
+    "email": null,
+    "telefone": "(11) 46527600"
   },
   {
     "nome": "Lins",
@@ -342,7 +467,11 @@ export const cemeteryMunicipios = [
     "lng": -49.7526,
     "total": 398000.0,
     "nEmendas": 1,
-    "nImpedidos": 0
+    "nImpedidos": 0,
+    "prefeito": "JOÃO LUIS LOPES PANDOLFI",
+    "partido": "PSD",
+    "email": "contabilidade@lins.sp.gov.br",
+    "telefone": "(14) 35334253"
   },
   {
     "nome": "Pongaí",
@@ -352,7 +481,11 @@ export const cemeteryMunicipios = [
     "lng": -49.3604,
     "total": 398000.0,
     "nEmendas": 1,
-    "nImpedidos": 0
+    "nImpedidos": 0,
+    "prefeito": "GILHIARD HENRIQUE DE BORTOLI",
+    "partido": "CIDADANIA",
+    "email": null,
+    "telefone": null
   },
   {
     "nome": "Santo Antônio da Alegria",
@@ -362,7 +495,11 @@ export const cemeteryMunicipios = [
     "lng": -47.1464,
     "total": 398000.0,
     "nEmendas": 1,
-    "nImpedidos": 1
+    "nImpedidos": 1,
+    "prefeito": "DENILSON DE CARVALHO",
+    "partido": "REPUBLICANOS",
+    "email": null,
+    "telefone": "(16) 36681233"
   },
   {
     "nome": "Aurora do Tocantins",
@@ -372,7 +509,11 @@ export const cemeteryMunicipios = [
     "lng": -46.4076,
     "total": 398000.0,
     "nEmendas": 1,
-    "nImpedidos": 0
+    "nImpedidos": 0,
+    "prefeito": "EDSON NEIVA DA SILVA",
+    "partido": "MDB",
+    "email": null,
+    "telefone": "(63) 36581466"
   }
 ];
 
@@ -472,5 +613,426 @@ export const cemeteryUfs = [
     "total": 398000.0,
     "nMunicipios": 1,
     "nEmendas": 1
+  }
+];
+
+export const cemeteryEmendas = [
+  {
+    "plano": "09032026-095720",
+    "municipio": "Aracruz",
+    "uf": "ES",
+    "prefeito": "LUIZ CARLOS COUTINHO",
+    "partido": "PP",
+    "email": "contabilidade@pma.es.gov.br",
+    "telefone": "(27) 32964520",
+    "situacao": "CIENTE",
+    "total": 1990000.0
+  },
+  {
+    "plano": "09032026-091971",
+    "municipio": "Inhumas",
+    "uf": "GO",
+    "prefeito": "JOSÉ ESSADO NETO",
+    "partido": "UNIÃO",
+    "email": "contabilidade@inhumas.go.gov.br",
+    "telefone": "(62) 35112121",
+    "situacao": "CIENTE",
+    "total": 995000.0
+  },
+  {
+    "plano": "09032026-091159",
+    "municipio": "Caiçara do Norte",
+    "uf": "RN",
+    "prefeito": "ALCÉLIO FERNANDES BARBOSA",
+    "partido": "PSDB",
+    "email": null,
+    "telefone": null,
+    "situacao": "CIENTE",
+    "total": 796000.0
+  },
+  {
+    "plano": "09032026-092157",
+    "municipio": "Caseara",
+    "uf": "TO",
+    "prefeito": "MARCOS CARVALHO LIMA",
+    "partido": "SOLIDARIEDADE",
+    "email": null,
+    "telefone": null,
+    "situacao": "CIENTE",
+    "total": 796000.0
+  },
+  {
+    "plano": "09032026-096421",
+    "municipio": "Santana",
+    "uf": "AP",
+    "prefeito": "SEBASTIÃO FERREIRA DA ROCHA",
+    "partido": "PP",
+    "email": null,
+    "telefone": "(96) 32815292",
+    "situacao": "CIENTE",
+    "total": 597000.0
+  },
+  {
+    "plano": "09032026-088849",
+    "municipio": "Santana do São Francisco",
+    "uf": "SE",
+    "prefeito": "RICARDO JOSÉ RORIZ SILVA CRUZ",
+    "partido": "PSD",
+    "email": null,
+    "telefone": "(79) 32160524",
+    "situacao": "CIENTE",
+    "total": 597000.0
+  },
+  {
+    "plano": "09032026-090029",
+    "municipio": "Parecis",
+    "uf": "RO",
+    "prefeito": "MARCONDES DE CARVALHO",
+    "partido": "UNIÃO",
+    "email": "pmparecisro@hotmail.com",
+    "telefone": "(69) 34471051",
+    "situacao": "CIENTE",
+    "total": 547250.0
+  },
+  {
+    "plano": "09032026-091594",
+    "municipio": "São Domingos do Prata",
+    "uf": "MG",
+    "prefeito": "FERNANDO ROLLA",
+    "partido": "AVANTE",
+    "email": null,
+    "telefone": null,
+    "situacao": "CIENTE",
+    "total": 523371.99
+  },
+  {
+    "plano": "09032026-090181",
+    "municipio": "Jussari",
+    "uf": "BA",
+    "prefeito": "ORLEANS MASCARENHAS DOS SANTOS",
+    "partido": "PSD",
+    "email": "jorgeluiz.agp@hotmail.com",
+    "telefone": "(77) 36241485",
+    "situacao": "CIENTE",
+    "total": 497500.0
+  },
+  {
+    "plano": "09032026-094115",
+    "municipio": "Petrolândia",
+    "uf": "SC",
+    "prefeito": "RODRIGO DE SOUZA",
+    "partido": "MDB",
+    "email": null,
+    "telefone": null,
+    "situacao": "CIENTE",
+    "total": 497500.0
+  },
+  {
+    "plano": "09032026-091699",
+    "municipio": "Santa Tereza",
+    "uf": "RS",
+    "prefeito": "GISELE CAUMO",
+    "partido": "PP",
+    "email": "contabil@santatereza.rs.gov.br",
+    "telefone": "(54) 34561033",
+    "situacao": "CIENTE",
+    "total": 497500.0
+  },
+  {
+    "plano": "09032026-095635",
+    "municipio": "Lidianópolis",
+    "uf": "PR",
+    "prefeito": "APARECIDO BUZATO",
+    "partido": "REPUBLICANOS",
+    "email": null,
+    "telefone": null,
+    "situacao": "CIENTE",
+    "total": 497500.0
+  },
+  {
+    "plano": "09032026-094184",
+    "municipio": "Gaspar",
+    "uf": "SC",
+    "prefeito": "PAULO NORBERTO KOERICH",
+    "partido": "PL",
+    "email": "camilla@gaspar.sc.gov.br",
+    "telefone": "(47) 33316347",
+    "situacao": "CIENTE",
+    "total": 497500.0
+  },
+  {
+    "plano": "09032026-096016",
+    "municipio": "Olho d'Água",
+    "uf": "PB",
+    "prefeito": "JOANA SABINO DE ALMEIDA CARVALHO",
+    "partido": "PSB",
+    "email": null,
+    "telefone": null,
+    "situacao": "CIENTE",
+    "total": 497500.0
+  },
+  {
+    "plano": "09032026-096098",
+    "municipio": "Presidente Dutra",
+    "uf": "BA",
+    "prefeito": "ROBERTO CARLOS ALVES DE SOUZA",
+    "partido": "MDB",
+    "email": "contabilidadepd@gmail.com",
+    "telefone": "(74) 36401010",
+    "situacao": "CIENTE",
+    "total": 497500.0
+  },
+  {
+    "plano": "09032026-092960",
+    "municipio": "Caiçara do Norte",
+    "uf": "RN",
+    "prefeito": "ALCÉLIO FERNANDES BARBOSA",
+    "partido": "PSDB",
+    "email": null,
+    "telefone": null,
+    "situacao": "CIENTE",
+    "total": 497500.0
+  },
+  {
+    "plano": "09032026-094191",
+    "municipio": "Pomerode",
+    "uf": "SC",
+    "prefeito": "RAFAEL RAMTHUN",
+    "partido": "PL",
+    "email": null,
+    "telefone": null,
+    "situacao": "IMPEDIDO",
+    "total": 497500.0
+  },
+  {
+    "plano": "09032026-093125",
+    "municipio": "Campanário",
+    "uf": "MG",
+    "prefeito": "FAUSTO DUARTE",
+    "partido": "REPUBLICANOS",
+    "email": null,
+    "telefone": null,
+    "situacao": "CIENTE",
+    "total": 497500.0
+  },
+  {
+    "plano": "09032026-095872",
+    "municipio": "Claro dos Poções",
+    "uf": "MG",
+    "prefeito": "JOSÉ VANDERLEI CARDOSO",
+    "partido": "UNIÃO",
+    "email": "prefeito@clarodospocoes.mg.gov.br",
+    "telefone": "(38) 32371157",
+    "situacao": "CIENTE",
+    "total": 492525.0
+  },
+  {
+    "plano": "09032026-097161",
+    "municipio": "Cajazeiras do Piauí",
+    "uf": "PI",
+    "prefeito": "CARLOS ALBERTO SILVESTRE DE SOUSA",
+    "partido": "PP",
+    "email": null,
+    "telefone": null,
+    "situacao": "CIENTE",
+    "total": 398000.0
+  },
+  {
+    "plano": "09032026-090211",
+    "municipio": "Santo Antônio da Alegria",
+    "uf": "SP",
+    "prefeito": "DENILSON DE CARVALHO",
+    "partido": "REPUBLICANOS",
+    "email": null,
+    "telefone": "(16) 36681233",
+    "situacao": "IMPEDIDO",
+    "total": 398000.0
+  },
+  {
+    "plano": "09032026-093400",
+    "municipio": "Arujá",
+    "uf": "SP",
+    "prefeito": "LUIS ANTONIO DE CAMARGO",
+    "partido": "PSD",
+    "email": null,
+    "telefone": "(11) 46527600",
+    "situacao": "IMPEDIDO",
+    "total": 398000.0
+  },
+  {
+    "plano": "09032026-096596",
+    "municipio": "Cordeiro",
+    "uf": "RJ",
+    "prefeito": "LEONAN LOPES MELHORANCE",
+    "partido": "PL",
+    "email": null,
+    "telefone": null,
+    "situacao": "IMPEDIDO",
+    "total": 398000.0
+  },
+  {
+    "plano": "09032026-090410",
+    "municipio": "Abreulândia",
+    "uf": "TO",
+    "prefeito": "MANOEL FRANCISCO DE MOURA",
+    "partido": "PT",
+    "email": null,
+    "telefone": "(63) 33891225",
+    "situacao": "CIENTE",
+    "total": 398000.0
+  },
+  {
+    "plano": "09032026-090428",
+    "municipio": "Aurora do Tocantins",
+    "uf": "TO",
+    "prefeito": "EDSON NEIVA DA SILVA",
+    "partido": "MDB",
+    "email": null,
+    "telefone": "(63) 36581466",
+    "situacao": "CIENTE",
+    "total": 398000.0
+  },
+  {
+    "plano": "09032026-091267",
+    "municipio": "Santa Tereza",
+    "uf": "RS",
+    "prefeito": "GISELE CAUMO",
+    "partido": "PP",
+    "email": "contabil@santatereza.rs.gov.br",
+    "telefone": "(54) 34561033",
+    "situacao": "CIENTE",
+    "total": 398000.0
+  },
+  {
+    "plano": "09032026-091274",
+    "municipio": "Caxias do Sul",
+    "uf": "RS",
+    "prefeito": "ADILO ANGELO DIDOMENICO",
+    "partido": "PSDB",
+    "email": null,
+    "telefone": "(54) 32186000",
+    "situacao": "CIENTE",
+    "total": 398000.0
+  },
+  {
+    "plano": "09032026-092295",
+    "municipio": "Ângulo",
+    "uf": "PR",
+    "prefeito": "ALEXANDRE DE SOUSA PROFETA",
+    "partido": "PSD",
+    "email": null,
+    "telefone": null,
+    "situacao": "CIENTE",
+    "total": 398000.0
+  },
+  {
+    "plano": "09032026-092630",
+    "municipio": "São Mateus",
+    "uf": "ES",
+    "prefeito": "MARCUS AZEVEDO BATISTA",
+    "partido": "PODE",
+    "email": "administracao@saomateus.es.gov.br",
+    "telefone": "(27) 98135476",
+    "situacao": "CIENTE",
+    "total": 398000.0
+  },
+  {
+    "plano": "09032026-093252",
+    "municipio": "Paula Cândido",
+    "uf": "MG",
+    "prefeito": "EVERALDO ROBERTO DA CONCEIÇÃO",
+    "partido": "UNIÃO",
+    "email": null,
+    "telefone": null,
+    "situacao": "CIENTE",
+    "total": 398000.0
+  },
+  {
+    "plano": "09032026-094251",
+    "municipio": "Lins",
+    "uf": "SP",
+    "prefeito": "JOÃO LUIS LOPES PANDOLFI",
+    "partido": "PSD",
+    "email": "contabilidade@lins.sp.gov.br",
+    "telefone": "(14) 35334253",
+    "situacao": "CIENTE",
+    "total": 398000.0
+  },
+  {
+    "plano": "09032026-094637",
+    "municipio": "Pongaí",
+    "uf": "SP",
+    "prefeito": "GILHIARD HENRIQUE DE BORTOLI",
+    "partido": "CIDADANIA",
+    "email": null,
+    "telefone": null,
+    "situacao": "CIENTE",
+    "total": 398000.0
+  },
+  {
+    "plano": "09032026-095310",
+    "municipio": "Brejetuba",
+    "uf": "ES",
+    "prefeito": "LEVI MARQUES DE SOUZA",
+    "partido": "PDT",
+    "email": null,
+    "telefone": "(027) 5604401",
+    "situacao": "CIENTE",
+    "total": 398000.0
+  },
+  {
+    "plano": "09032026-095515",
+    "municipio": "Cantagalo",
+    "uf": "PR",
+    "prefeito": "JOAO KONJUNSKI",
+    "partido": "PSD",
+    "email": null,
+    "telefone": null,
+    "situacao": "CIENTE",
+    "total": 398000.0
+  },
+  {
+    "plano": "09032026-095554",
+    "municipio": "Roque Gonzales",
+    "uf": "RS",
+    "prefeito": "FERNANDO MATTES MACHRY",
+    "partido": "PP",
+    "email": null,
+    "telefone": null,
+    "situacao": "CIENTE",
+    "total": 398000.0
+  },
+  {
+    "plano": "09032026-097059",
+    "municipio": "Divinópolis do Tocantins",
+    "uf": "TO",
+    "prefeito": "FLAVIO RODRIGUES SILVA",
+    "partido": "UNIÃO",
+    "email": "ascomjct@uol.com.br",
+    "telefone": "(63) 35311177",
+    "situacao": "CIENTE",
+    "total": 398000.0
+  },
+  {
+    "plano": "09032026-097063",
+    "municipio": "Abreulândia",
+    "uf": "TO",
+    "prefeito": "MANOEL FRANCISCO DE MOURA",
+    "partido": "PT",
+    "email": null,
+    "telefone": "(63) 33891225",
+    "situacao": "CIENTE",
+    "total": 398000.0
+  },
+  {
+    "plano": "09032026-089155",
+    "municipio": "São Gonçalo do Piauí",
+    "uf": "PI",
+    "prefeito": "GERLANE FERREIRA DA SILVA CABRAL",
+    "partido": "MDB",
+    "email": null,
+    "telefone": null,
+    "situacao": "CIENTE",
+    "total": 398000.0
   }
 ];

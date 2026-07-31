@@ -42,10 +42,23 @@ export default function CemeteryMap({ municipios }) {
                   {m.nome} — {m.uf}
                 </strong>
                 <span className="cemetery-popup-value">{brl(m.total)}</span>
-                <span>
+                <span className="cemetery-popup-meta">
                   {m.nEmendas} {m.nEmendas === 1 ? 'emenda' : 'emendas'} ·{' '}
                   {impedido ? 'Impedido' : 'Ciente'}
                 </span>
+                {m.prefeito && (
+                  <span className="cemetery-popup-prefeito">
+                    {m.prefeito}
+                    {m.partido ? ` (${m.partido})` : ''}
+                  </span>
+                )}
+                {(m.email || m.telefone) && (
+                  <span className="cemetery-popup-contact">
+                    {m.email}
+                    {m.email && m.telefone ? ' · ' : ''}
+                    {m.telefone}
+                  </span>
+                )}
               </div>
             </Popup>
           </CircleMarker>
