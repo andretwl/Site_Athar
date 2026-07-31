@@ -19,6 +19,7 @@ import {
 
 const CapabilityRadar = lazy(() => import('./components/CapabilityRadar'))
 const DeliveryBars = lazy(() => import('./components/DeliveryBars'))
+const CemeteryUseCase = lazy(() => import('./components/CemeteryUseCase'))
 
 function MetricCard({ metric }) {
   return (
@@ -77,6 +78,7 @@ export default function App() {
           <a href="#abilities">Capacidades</a>
           <a href="#systems">Sistemas</a>
           <a href="#parlamentar">Inteligência</a>
+          <a href="#cemiterios">Caso de uso</a>
           <a href="#resume">Resumo</a>
         </nav>
       </header>
@@ -191,6 +193,10 @@ export default function App() {
           <PipelineMap stages={pipelineStages} />
           <SkillGroups groups={politicalSkillGroups} />
         </section>
+
+        <Suspense fallback={<div className="chart-card chart-loading">Carregando exemplo de uso...</div>}>
+          <CemeteryUseCase />
+        </Suspense>
 
         <section className="section-block">
           <div className="section-heading">
