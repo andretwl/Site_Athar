@@ -9,12 +9,12 @@ import {
 } from 'recharts'
 
 const data = [
-  { subject: 'IA aplicada', strength: 94 },
-  { subject: 'Automação', strength: 91 },
-  { subject: 'Sites e funis', strength: 87 },
-  { subject: 'Tracking e dados', strength: 89 },
-  { subject: 'Operação interna', strength: 84 },
-  { subject: 'Entrega rápida', strength: 86 }
+  { subject: 'Dados gov.', strength: 95 },
+  { subject: 'IA aplicada', strength: 93 },
+  { subject: 'Análise política', strength: 92 },
+  { subject: 'Automação', strength: 90 },
+  { subject: 'Web/API', strength: 89 },
+  { subject: 'Operação', strength: 86 }
 ]
 
 export default function CapabilityRadar() {

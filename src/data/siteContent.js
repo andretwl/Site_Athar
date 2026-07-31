@@ -132,6 +132,125 @@ export const projectCards = [
   }
 ]
 
+export const flagshipProject = {
+  title: 'TransfereGov API — Painel de Inteligência Parlamentar',
+  period: 'Projeto principal',
+  path: '/mnt/data/Projects_SSD/tranfere_gov_api',
+  summary:
+    'Pipeline completo de dados do sistema Transferegov (Emendas PIX e Transferências Especiais) do Governo Federal: extração, validação, enriquecimento com mais de 15 fontes públicas, inteligência artificial com RAG multi-analista e entrega em dashboard e API.',
+  tags: ['Python 3.11', 'PostgreSQL', 'Pydantic', 'FastAPI', 'Dash/Plotly', 'Qdrant', 'LocalAI', 'RAG v7', 'MCP'],
+  outcome:
+    'Sistema de inteligência parlamentar: classifica deputados entre governo, oposição e independentes, mede alinhamento político, detecta anomalias e fisiologismo, monitora emendas por município e gera documentos oficiais automaticamente.',
+  stats: [
+    { value: '43', label: 'endpoints de API REST' },
+    { value: '74', label: 'gráficos interativos' },
+    { value: '15+', label: 'fontes de dados públicas' },
+    { value: '7', label: 'analistas de IA (RAG v7)' }
+  ],
+  deliverables: [
+    {
+      title: 'Monitoramento de emendas',
+      text: 'Extração e acompanhamento de Emendas PIX e discricionárias por parlamentar, município e situação, com histórico completo.'
+    },
+    {
+      title: 'Perfis de parlamentares',
+      text: 'Dossiês analíticos gerados por IA com classificação política, áreas temáticas, discursos, votações e proposições.'
+    },
+    {
+      title: 'Análise de alinhamento',
+      text: 'Triângulo político deputado × prefeito × governador com dados eleitorais do TSE cruzados com emendas.'
+    },
+    {
+      title: 'Riscos e auditoria',
+      text: 'Alertas de anomalias, processos judiciais (DataJud), compras públicas e indicadores sociais por município.'
+    },
+    {
+      title: 'Finanças públicas',
+      text: 'Dados SICONFI (DCA + RREO) de municípios e estados: arrecadação, receitas e despesas para embasar decisão.'
+    },
+    {
+      title: 'Redação oficial',
+      text: 'Geração automática de ofícios, notas técnicas, pareceres e despachos seguindo o Manual de Redação da Presidência.'
+    }
+  ]
+}
+
+export const pipelineStages = [
+  {
+    step: '01',
+    title: 'Extração',
+    text: 'Coleta de Planos de Ação da API pública do Transferegov, Portal da Transparência e sistema de discricionárias, com paginação, retry e cache.'
+  },
+  {
+    step: '02',
+    title: 'Validação',
+    text: 'Schemas Pydantic garantem integridade dos dados antes de entrar no banco.'
+  },
+  {
+    step: '03',
+    title: 'PostgreSQL',
+    text: '25+ tabelas, views de negócio e funções upsert idempotentes com migrations versionadas.'
+  },
+  {
+    step: '04',
+    title: 'Enriquecimento',
+    text: '15+ fontes: IBGE, BrasilAPI, Câmara, Senado, TSE, SICONFI, FNDE, TCU, DataJud, Compras e Diário Oficial.'
+  },
+  {
+    step: '05',
+    title: 'RAG v7',
+    text: 'Qdrant + LocalAI: 23 tipos de chunks, 7 analistas especialistas e multi-query com 15 consultas temáticas.'
+  },
+  {
+    step: '06',
+    title: 'Entrega',
+    text: 'Dashboard com 74 gráficos (Dash/Plotly), API REST com 43 endpoints (FastAPI) e integração MCP.'
+  }
+]
+
+export const politicalSkillGroups = [
+  {
+    group: 'Engenharia de dados',
+    skills: [
+      { name: 'Python 3.11', level: 95, desc: 'ETL/ELT, scripts e orquestração de pipelines' },
+      { name: 'PostgreSQL', level: 92, desc: '25+ tabelas, views, upserts e migrations' },
+      { name: 'Pydantic', level: 90, desc: 'Validação de schemas em todos os ingestores' },
+      { name: 'pandas / DuckDB', level: 88, desc: 'Transformações e análise de grandes volumes' },
+      { name: 'APIs públicas gov.br', level: 94, desc: 'Integração com mais de 15 fontes federais' }
+    ]
+  },
+  {
+    group: 'IA e retrieval',
+    skills: [
+      { name: 'RAG multi-analista', level: 92, desc: '7 analistas especialistas com quality check próprio' },
+      { name: 'Qdrant', level: 90, desc: 'Busca vetorial, 23 tipos de chunks e fusão RRF' },
+      { name: 'LocalAI', level: 93, desc: 'Orquestração de modelos locais com gestão de VRAM' },
+      { name: 'vLLM', level: 85, desc: 'Inferência local e em nuvem (Modal)' },
+      { name: 'Embeddings', level: 84, desc: 'Indexação semântica de 768 dimensões' }
+    ]
+  },
+  {
+    group: 'Web, API e entrega',
+    skills: [
+      { name: 'FastAPI', level: 91, desc: 'API REST com 43 endpoints e Swagger' },
+      { name: 'Dash / Plotly', level: 88, desc: 'Dashboard com 74 gráficos interativos' },
+      { name: 'React / Vite', level: 87, desc: 'SPA frontend do painel' },
+      { name: 'MCP', level: 86, desc: 'Servidor e ferramentas Model Context Protocol' },
+      { name: 'Docker / Cloudflare', level: 84, desc: 'Containers, deploy e Pages' }
+    ]
+  },
+  {
+    group: 'Análise política aplicada',
+    skills: [
+      { name: 'Classificação política', level: 93, desc: 'Governo / Oposição / Independente por deputado' },
+      { name: 'Alinhamento partidário', level: 90, desc: 'Deputado × prefeito × governador (TSE + emendas)' },
+      { name: 'Finanças públicas', level: 89, desc: 'SICONFI DCA + RREO de municípios e estados' },
+      { name: 'Dados eleitorais TSE', level: 88, desc: 'Prefeitos, vereadores e governadores eleitos' },
+      { name: 'Detecção de anomalias', level: 87, desc: 'Red flags, fisiologismo e risco judicial' }
+    ]
+  }
+]
+
 export const resumeHighlights = [
   {
     period: 'Estratégia',

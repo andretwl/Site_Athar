@@ -3,8 +3,14 @@ import portrait from '../images/photoathar-hero.jpg'
 import ProjectGrid from './components/ProjectGrid'
 import SystemMap from './components/SystemMap'
 import Timeline from './components/Timeline'
+import ProjectSpotlight from './components/ProjectSpotlight'
+import PipelineMap from './components/PipelineMap'
+import SkillGroups from './components/SkillGroups'
 import {
   audiencePillars,
+  flagshipProject,
+  pipelineStages,
+  politicalSkillGroups,
   presentationServices,
   projectCards,
   proofMetrics,
@@ -70,6 +76,7 @@ export default function App() {
           <a href="#apresentacao">Apresentação</a>
           <a href="#abilities">Capacidades</a>
           <a href="#systems">Sistemas</a>
+          <a href="#parlamentar">Inteligência</a>
           <a href="#resume">Resumo</a>
         </nav>
       </header>
@@ -167,6 +174,22 @@ export default function App() {
             </p>
           </div>
           <SystemMap />
+        </section>
+
+        <section className="section-block" id="parlamentar">
+          <div className="section-heading">
+            <p className="section-kicker">Inteligência parlamentar</p>
+            <h2>O sistema que construí para quem trabalha com política</h2>
+            <p>
+              Construí um pipeline completo de dados do Transferegov (Emendas PIX e
+              Transferências Especiais): extração, validação, enriquecimento com mais de 15
+              fontes públicas, IA com RAG multi-analista e entrega em dashboard e API. É o tipo
+              de ferramenta que transforma dados públicos em decisão política.
+            </p>
+          </div>
+          <ProjectSpotlight project={flagshipProject} />
+          <PipelineMap stages={pipelineStages} />
+          <SkillGroups groups={politicalSkillGroups} />
         </section>
 
         <section className="section-block">

@@ -2,11 +2,11 @@ import React from 'react'
 import { Bar, BarChart, CartesianGrid, Cell, ResponsiveContainer, XAxis, YAxis } from 'recharts'
 
 const data = [
-  { name: 'Campanhas e ads', value: 91, color: '#ff7a59' },
-  { name: 'Sites e tracking', value: 89, color: '#ffd166' },
-  { name: 'Conteúdo com IA', value: 87, color: '#7ae582' },
-  { name: 'Automação operacional', value: 84, color: '#7ad7ff' },
-  { name: 'Gestão de equipes', value: 81, color: '#c4b5fd' }
+  { name: 'Inteligência política', value: 94, color: '#ff7a59' },
+  { name: 'Dados e pipelines', value: 92, color: '#7ad7ff' },
+  { name: 'IA e RAG', value: 90, color: '#7ae582' },
+  { name: 'Sites e tracking', value: 88, color: '#ffd166' },
+  { name: 'Automação operacional', value: 85, color: '#c4b5fd' }
 ]
 
 export default function DeliveryBars() {
