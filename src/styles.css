@@ -378,6 +378,7 @@ a {
 }
 
 .chart-card {
+  min-width: 0;
   padding: 22px;
   border-radius: 24px;
   background: var(--panel-strong);
@@ -394,6 +395,7 @@ a {
 .chart-stage {
   margin-top: 14px;
   height: 340px;
+  min-width: 0;
 }
 
 .audience-grid {
@@ -554,6 +556,7 @@ a {
   .site-shell {
     width: min(100% - 20px, 1180px);
     padding-top: 12px;
+    overflow-x: clip;
   }
 
   .topbar,
@@ -666,6 +669,7 @@ a {
 .stat-chip {
   display: grid;
   gap: 4px;
+  min-width: 0;
   padding: 16px;
   border-radius: 18px;
   background: rgba(255, 255, 255, 0.04);
@@ -674,9 +678,10 @@ a {
 
 .stat-chip strong {
   font-family: var(--font-display);
-  font-size: 1.9rem;
+  font-size: clamp(1.1rem, 4.5vw, 1.9rem);
   color: var(--accent-soft);
-  line-height: 1;
+  line-height: 1.15;
+  overflow-wrap: anywhere;
 }
 
 .stat-chip span {
